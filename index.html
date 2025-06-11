@@ -6,9 +6,12 @@
   <title>daynm.net</title>
   <style>
     body {
-      background-color: #fff;
-      color: #111;
       font-family: 'Segoe UI', sans-serif;
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       margin: 0;
       padding: 2rem;
     }
@@ -27,7 +30,7 @@
       text-align: center;
       margin-bottom: 1rem;
       font-size: 1.2rem;
-      color: #222;
+      color: #ffffff;
     }
     .embed-box {
       width: 220px;
@@ -40,6 +43,22 @@
       overflow: hidden;
     }
     .embed-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: #000;
+    }
+    .wide-embed-box {
+      width: 600px;
+      height: 300px;
+      background: #000;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .wide-embed-box iframe {
       width: 100%;
       height: 100%;
       border: none;
@@ -64,14 +83,14 @@
     <div class="row">
       <div>
         <div class="section-title">Twitch Stream:</div>
-        <div class="embed-box">
-          <iframe src="" allowfullscreen></iframe>
+        <div class="wide-embed-box">
+          <iframe src="https://www.twitch.tv/daynm_" allowfullscreen></iframe>
         </div>
       </div>
       <div>
         <div class="section-title">Recent Uploads:</div>
-        <div class="embed-box">
-          <iframe src="" allowfullscreen></iframe>
+        <div class="wide-embed-box">
+          <iframe src="https://www.youtube.com/@Daynmm" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -80,13 +99,13 @@
         <div class="section-title">Builds:</div>
         <div style="display: flex; gap: 2rem;">
           <div class="embed-box">
-            <iframe src="" allowfullscreen></iframe>
+            <a class="embed-link" href="blog0.html"></a>
           </div>
           <div class="embed-box">
-            <iframe src="" allowfullscreen></iframe>
+            <a class="embed-link" href="blog1.html"></a>
           </div>
           <div class="embed-box">
-            <a class="embed-link" href="blog.html"></a>
+            <a class="embed-link" href="blog2.html"></a>
           </div>
         </div>
       </div>
